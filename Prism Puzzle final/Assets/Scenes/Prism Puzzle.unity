@@ -5027,6 +5027,8 @@ MonoBehaviour:
   OriginalPosition: {x: 2.768, y: -1.786, z: 1}
   SmallBlock2Position: {x: -0.1, y: 3.42, z: 1}
   Original2Position: {x: 2.95, y: -2, z: 1}
+  Player1Blocks: {fileID: 322812574}
+  Player2Blocks: {fileID: 1251352795}
 --- !u!4 &1846536134
 Transform:
   m_ObjectHideFlags: 0
