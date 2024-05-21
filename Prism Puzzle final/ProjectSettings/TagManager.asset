@@ -7,6 +7,8 @@ TagManager:
   - DragPanel
   - Player1Board
   - Player2Board
+  - P2GPB
+  - P1GPB
   layers:
   - Default
   - TransparentFX

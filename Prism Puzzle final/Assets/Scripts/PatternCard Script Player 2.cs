@@ -12,14 +12,19 @@ public class PatternCardScript2 : MonoBehaviour
 
     public Transform Player2PuzzlePosition;
 
+    private GameObject GetPuzzleButton1;
+    private GameObject GetPuzzleButton2;
+
     // Start is called before the first frame update
     void Start()
     {
+        GetPuzzleButton1 = GameObject.FindGameObjectWithTag("P1GPB");
+        GetPuzzleButton2 = GameObject.FindGameObjectWithTag("P2GPB");
 
     }
 
 
-    
+
 
     public void Player2GetPuzzleCard ()
     {

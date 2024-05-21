@@ -2401,7 +2401,7 @@ GameObject:
   - component: {fileID: 935715538}
   m_Layer: 5
   m_Name: Get Card Button
-  m_TagString: Untagged
+  m_TagString: P1GPB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4535,7 +4535,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1543573334}
   - component: {fileID: 1543573333}
-  - component: {fileID: 1543573335}
   m_Layer: 0
   m_Name: PatternCard Manager
   m_TagString: Untagged
@@ -4566,6 +4565,7 @@ MonoBehaviour:
   - {fileID: 7796579761130548229, guid: 18b296ae27644974ab36fc5e324e9c40, type: 3}
   - {fileID: 6964142431612674847, guid: 162b0af13bcc1a74396636a8bf52da11, type: 3}
   Player1PuzzlePosition: {fileID: 139421659}
+  Player2PuzzlePosition: {fileID: 446660320}
 --- !u!4 &1543573334
 Transform:
   m_ObjectHideFlags: 0
@@ -4581,29 +4581,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1543573335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543573332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bec06d86ebc8c5244a8022a8a5cbe45b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PuzzleCards:
-  - {fileID: 7390729004682945473, guid: 4a86d5764ee76434a95fef7a4047e965, type: 3}
-  - {fileID: 2351813208820200265, guid: 037c86740f742b541bebd8a1a9738a19, type: 3}
-  - {fileID: 5709395816858983461, guid: 01b55bd6c7a1c6e4f985239625fc8399, type: 3}
-  - {fileID: 7654286324164901764, guid: 1c1c84f7081d5ed42956febe69d3425a, type: 3}
-  - {fileID: 586383901337558161, guid: ea8b1a54dc35cf042808a24f533137bf, type: 3}
-  - {fileID: 5076984428924250109, guid: 0bae8d1f7599a7846b8e846013c0de21, type: 3}
-  - {fileID: 6598257187868510690, guid: 557d9b5eebb3e8640bca0d1e0c1ffe6a, type: 3}
-  - {fileID: 7796579761130548229, guid: 18b296ae27644974ab36fc5e324e9c40, type: 3}
-  - {fileID: 6964142431612674847, guid: 162b0af13bcc1a74396636a8bf52da11, type: 3}
-  Player2PuzzlePosition: {fileID: 446660320}
 --- !u!1001 &1561362560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5097,7 +5074,7 @@ GameObject:
   - component: {fileID: 1843269265}
   m_Layer: 5
   m_Name: Get Card Button
-  m_TagString: Untagged
+  m_TagString: P2GPB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5165,8 +5142,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1543573335}
-        m_TargetAssemblyTypeName: PatternCardScript2, Assembly-CSharp
+      - m_Target: {fileID: 1543573333}
+        m_TargetAssemblyTypeName: PatternCardScript, Assembly-CSharp
         m_MethodName: Player2GetPuzzleCard
         m_Mode: 1
         m_Arguments:
