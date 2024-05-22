@@ -6,6 +6,7 @@ public class Draggable : MonoBehaviour
     private Transform startParent;
     private bool isDragging = false;
     private Canvas canvas;
+    public LayerMask Layer;
 
     private void Awake()
     {
@@ -37,7 +38,7 @@ public class Draggable : MonoBehaviour
     {
         // When the mouse button is released
         isDragging = false;
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.up, 3,Layer);
 
         if (hit.collider != null && hit.collider.CompareTag("GridSlot"))
         {
