@@ -9,6 +9,8 @@ TagManager:
   - Player2Board
   - P2GPB
   - P1GPB
+  - GridSlot
+  - R$WSlots
   layers:
   - Default
   - TransparentFX
