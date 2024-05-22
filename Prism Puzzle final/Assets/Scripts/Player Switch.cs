@@ -22,6 +22,9 @@ public class PlayerSwitch : MonoBehaviour
 
     private Vector3 OriginalSize = new Vector3(1,1,0);
 
+    public GameObject Player1Blocks;
+    public GameObject Player2Blocks;
+
 
 
     public void Start()
@@ -43,7 +46,11 @@ public class PlayerSwitch : MonoBehaviour
 
         Player1PuzzleBoard.transform.position = OriginalPosition;
         Player1PuzzleBoard.transform.localScale = OriginalSize;
-        
+
+        Player1Blocks.SetActive(true);
+        Player2Blocks.SetActive(false);
+
+
 
     }
 
@@ -55,6 +62,9 @@ public class PlayerSwitch : MonoBehaviour
 
         Player2PuzzleBoard.transform.localScale = OriginalSize;
         Player2PuzzleBoard.transform.position = Original2Position;
+
+        Player2Blocks.SetActive(true);
+        Player1Blocks.SetActive(false);
 
     }
 }

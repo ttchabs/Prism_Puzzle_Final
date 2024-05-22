@@ -477,7 +477,6 @@ RectTransform:
   - {fileID: 39697638}
   - {fileID: 1348603627}
   - {fileID: 1843269264}
-  - {fileID: 1340268016}
   m_Father: {fileID: 217073024}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -9842,6 +9841,8 @@ GameObject:
   m_Layer: 5
   m_Name: Space1 (5)
   m_TagString: Untagged
+  m_Name: Get Card Button
+  m_TagString: P1GPB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10185,6 +10186,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535710436}
   m_CullTransparentMesh: 1
+
 --- !u!1 &1539398138
 GameObject:
   m_ObjectHideFlags: 0
@@ -10335,6 +10337,9 @@ MonoBehaviour:
   - {fileID: 6964142431612674847, guid: 162b0af13bcc1a74396636a8bf52da11, type: 3}
   Player2PuzzlePosition: {fileID: 446660320}
 --- !u!1001 &1545496146
+
+--- !u!1001 &1137971023
+
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11546,6 +11551,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
+
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1774108323
@@ -11683,10 +11689,22 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!61 &1777165563
 BoxCollider2D:
+
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1348603626
+GameObject:
+
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+
   m_GameObject: {fileID: 1777165559}
   m_Enabled: 1
   m_Density: 1
@@ -11732,11 +11750,42 @@ GameObject:
   m_PrefabInstance: {fileID: 164159046}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1793779679 stripped
+
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1348603627}
+  - component: {fileID: 1348603630}
+  - component: {fileID: 1348603629}
+  - component: {fileID: 1348603628}
+  - component: {fileID: 1348603631}
+  m_Layer: 5
+  m_Name: Hide Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1348603627
+
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5714455869487410798, guid: f1b93fc41df80e74492ae0a83f5fc1bb, type: 3}
   m_PrefabInstance: {fileID: 164159046}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1793779680
+  m_GameObject: {fileID: 1348603626}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1.000305}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 116101136}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -716.78, y: 113.82999}
+  m_SizeDelta: {x: 425.79, y: 63.48}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1348603628
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11748,9 +11797,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f01dd75801588214285d68787204b390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+
 --- !u!50 &1793779681
 Rigidbody2D:
   serializedVersion: 4
+
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1348603629}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1348603631}
+        m_TargetAssemblyTypeName: ShowAndHidButtons, Assembly-CSharp
+        m_MethodName: HideCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1348603629
+MonoBehaviour:
+
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11781,6 +11879,7 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+
   m_GameObject: {fileID: 1793779678}
   m_Enabled: 1
   m_Density: 1
@@ -11817,6 +11916,28 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
+
+  m_GameObject: {fileID: 1348603626}
+  m_CullTransparentMesh: 1
+--- !u!114 &1348603631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348603626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a37dd2a941c1164ab8065f2d4f02591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Layer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!1001 &1379477524
+PrefabInstance:
+  m_ObjectHideFlags: 0
+
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
@@ -12380,18 +12501,54 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+
   - component: {fileID: 1855338010}
   - component: {fileID: 1855338012}
   - component: {fileID: 1855338011}
   m_Layer: 5
   m_Name: Player 1 Discard Blocks Panel
+
+  - component: {fileID: 1543573334}
+  - component: {fileID: 1543573333}
+  m_Layer: 0
+  m_Name: PatternCard Manager
+
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+
 --- !u!224 &1855338010
 RectTransform:
+
+--- !u!114 &1543573333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543573332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7612ab3436605f41aedbfd69dedc3a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PuzzleCards:
+  - {fileID: 7390729004682945473, guid: 4a86d5764ee76434a95fef7a4047e965, type: 3}
+  - {fileID: 2351813208820200265, guid: 037c86740f742b541bebd8a1a9738a19, type: 3}
+  - {fileID: 5709395816858983461, guid: 01b55bd6c7a1c6e4f985239625fc8399, type: 3}
+  - {fileID: 7654286324164901764, guid: 1c1c84f7081d5ed42956febe69d3425a, type: 3}
+  - {fileID: 586383901337558161, guid: ea8b1a54dc35cf042808a24f533137bf, type: 3}
+  - {fileID: 5076984428924250109, guid: 0bae8d1f7599a7846b8e846013c0de21, type: 3}
+  - {fileID: 6598257187868510690, guid: 557d9b5eebb3e8640bca0d1e0c1ffe6a, type: 3}
+  - {fileID: 7796579761130548229, guid: 18b296ae27644974ab36fc5e324e9c40, type: 3}
+  - {fileID: 6964142431612674847, guid: 162b0af13bcc1a74396636a8bf52da11, type: 3}
+  Player1PuzzlePosition: {fileID: 139421659}
+  Player2PuzzlePosition: {fileID: 446660320}
+--- !u!4 &1543573334
+Transform:
+
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12404,6 +12561,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1940404407}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 341.77, y: 163.72002}
@@ -12448,6 +12606,9 @@ CanvasRenderer:
   m_GameObject: {fileID: 1855338009}
   m_CullTransparentMesh: 1
 --- !u!1001 &1858726933
+
+--- !u!1001 &1561362560
+
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -12570,12 +12731,47 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8082349729721111677, guid: 22232b557c7dcb042b6a1c30486649fb, type: 3}
   m_PrefabInstance: {fileID: 2127560738}
   m_PrefabAsset: {fileID: 0}
+
 --- !u!224 &1864265829 stripped
+
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1595915615}
+  - component: {fileID: 1595915618}
+  - component: {fileID: 1595915617}
+  - component: {fileID: 1595915616}
+  - component: {fileID: 1595915619}
+  m_Layer: 5
+  m_Name: Hide Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1595915615
+
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5448818691650295514, guid: 22232b557c7dcb042b6a1c30486649fb, type: 3}
   m_PrefabInstance: {fileID: 2127560738}
   m_PrefabAsset: {fileID: 0}
+
 --- !u!114 &1864265830
+
+  m_GameObject: {fileID: 1595915614}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1.000305}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1833781481}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -727.97, y: 113.82999}
+  m_SizeDelta: {x: 406.46, y: 63.48}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1595915616
+
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12587,9 +12783,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f01dd75801588214285d68787204b390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+
 --- !u!50 &1864265831
 Rigidbody2D:
   serializedVersion: 4
+
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1595915617}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1595915619}
+        m_TargetAssemblyTypeName: ShowAndHidButtons, Assembly-CSharp
+        m_MethodName: HideCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1595915617
+MonoBehaviour:
+
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12620,6 +12865,7 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+
   m_GameObject: {fileID: 1864265828}
   m_Enabled: 1
   m_Density: 1
@@ -12660,6 +12906,26 @@ BoxCollider2D:
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1870677849
+
+  m_GameObject: {fileID: 1595915614}
+  m_CullTransparentMesh: 1
+--- !u!114 &1595915619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595915614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a37dd2a941c1164ab8065f2d4f02591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Layer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!1 &1647842504
+
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12959,8 +13225,18 @@ Transform:
   m_LocalPosition: {x: -3.93, y: -2.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
+
   m_Children: []
   m_Father: {fileID: 1513465296}
+
+  m_Children:
+  - {fileID: 1092866664}
+  - {fileID: 855241235}
+  - {fileID: 1408034526}
+  - {fileID: 1595915615}
+  - {fileID: 935715537}
+  m_Father: {fileID: 1409707462}
+
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1936657342
 MonoBehaviour:
@@ -13031,8 +13307,13 @@ GameObject:
   - component: {fileID: 1940404409}
   - component: {fileID: 1940404408}
   m_Layer: 5
+
   m_Name: Player 1 Board and Blocks
   m_TagString: Player1Board
+
+  m_Name: Get Card Button
+  m_TagString: P2GPB
+
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13061,6 +13342,63 @@ RectTransform:
   m_SizeDelta: {x: 1194.7, y: 542.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1940404408
+--- !u!114 &1843269265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843269263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1843269266}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1543573333}
+        m_TargetAssemblyTypeName: PatternCardScript, Assembly-CSharp
+        m_MethodName: Player2GetPuzzleCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1843269266
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13180,6 +13518,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!61 &1972963814
 BoxCollider2D:
+  SmallBlockPosition: {x: -0.186, y: 3.492, z: 1}
+  OriginalPosition: {x: 2.768, y: -1.786, z: 1}
+  SmallBlock2Position: {x: -0.1, y: 3.42, z: 1}
+  Original2Position: {x: 2.95, y: -2, z: 1}
+  Player1Blocks: {fileID: 322812574}
+  Player2Blocks: {fileID: 1251352795}
+--- !u!4 &1846536134
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
